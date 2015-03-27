@@ -1,0 +1,17 @@
+var num = 7;
+
+for(i=0; i<num; i++){
+    var spaces = " ";
+    var stars = " "; 
+    var line= " ";
+    
+    for(q=1; q<=num-i; q++){
+        spaces += " ";
+    }
+    
+    for(k=0; k<=i; k++){
+        stars += "* ";
+    }
+    line = spaces+stars;
+    console.log(line);
+}
