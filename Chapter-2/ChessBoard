@@ -1,0 +1,22 @@
+var size =8;
+
+var createBoard = function(size){
+  var sym1 = " #";
+  var sym2 = "# ";
+  var width = size/2;
+  var evenRow = "";
+  var oddRow = "";
+  
+  
+  //create rows
+  for(i=0; i<width; i++){
+      evenRow +=sym2;
+      oddRow +=sym1;
+  }    
+  //draw rows
+  for(i=1; i<=size; i++){
+    if (i%2 === 0)
+        console.log(evenRow);
+    else console.log(oddRow);
+  }
+};
