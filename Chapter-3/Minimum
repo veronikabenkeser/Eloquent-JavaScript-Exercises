@@ -1,0 +1,5 @@
+function min(a, b){
+  if (a ===b)
+    console.log("Please enter 2 different numbers.");
+  return (a>b? b: a);
+};
