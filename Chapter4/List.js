@@ -34,3 +34,15 @@ function nth(list, number){
     return nth(list, number); 
     }
 }
+
+function nthMethod2(list, number){
+    if(number===0){
+        return list.value;
+    }
+    else{
+        for(i=0; i<number; i++){
+            list= list.rest;
+        }
+    return list.value;
+    }
+}
