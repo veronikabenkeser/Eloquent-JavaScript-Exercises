@@ -1,0 +1,5 @@
+var arr =[[1,2, 3, 4, 5], [20, 40, 40], [1, 2], [], [3, 4], [1000, "basket"]];
+
+var newArr = arr.reduce(function(arrayElement1, arrayElement2){
+    return arrayElement1.concat(arrayElement2);
+});
