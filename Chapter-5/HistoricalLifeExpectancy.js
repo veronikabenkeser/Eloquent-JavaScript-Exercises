@@ -48,7 +48,11 @@ This program computes and outputs the average age of the people in the ancestry 
 */
 function averageAgeByCent(array){
     var ancestryObj = groupBy(array, centCategories);
-    return calcAverage(ancestryObj);
+    ancestryObj = calcAverage(ancestryObj);
+    
+    for(var key in ancestryObj){
+        console.log(key + " : " + ancestryObj[key]);
+    }
 }
 
 function groupBy(array, f){
@@ -94,4 +98,4 @@ function reduceFunction(array){
     return total;
 }
 
-console.log(averageAgeByCent(ancestry));
+averageAgeByCent(ancestry);
