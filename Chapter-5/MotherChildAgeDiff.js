@@ -78,7 +78,7 @@ console.log(superObj["A"]);
 */
 
 var byName = {};
-//for each ancestor in the ancestory array, create a new object named 
+//for each ancestor in the ancestry array, create a new object named 
 //ancestor.name
 ancestry.forEach(function(ancestor){
     byName[ancestor.name] = ancestor;
